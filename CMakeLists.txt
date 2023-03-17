@@ -1,12 +1,12 @@
 include(FetchContent)
 
 FetchContent_Declare(
-    common
+    Common
     GIT_REPOSITORY https://github.com/cmake-paul/common.git
     GIT_TAG main
 )
 
-FetchContent_MakeAvailable(common)
+FetchContent_MakeAvailable(Common)
 
 add_library(platform_a)
 
@@ -16,7 +16,7 @@ add_subdirectory(src)
 target_link_libraries(
     platform_a
     PUBLIC
-    common
+    Common
 )
 
 register_with_common(IMPLEMENTATION platform_a)
