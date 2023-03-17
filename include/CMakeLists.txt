@@ -1,7 +1,7 @@
 target_include_directories(
-    platform_a
+    PlatformA
     PUBLIC
     "${CMAKE_CURRENT_LIST_DIR}"
 )
 
-add_subdirectory(platform_a)
+add_subdirectory(PlatformA)
