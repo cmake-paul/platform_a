@@ -1,3 +1,5 @@
+include(FetchContent)
+
 FetchContent_Declare(
     common
     GIT_REPOSITORY https://github.com/cmake-paul/common.git
